@@ -34,20 +34,8 @@ This function takes a few arguments that we explain in comments below:
     = Contact
 
     // lists in the aside are right aligned
-
     - #link("mailto:example@example.org")
     - +33 6 66 66 66 66
-    - 10 Downing Street, London
-
-    = Langages
-
-    - French : native
-    - English : C1
-    - German : B2
-
-    = Hobbys
-
-    - Writing things in Typst
   ]
 )
 
