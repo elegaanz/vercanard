@@ -19,9 +19,9 @@
     - English : C1
     - German : B2
 
-    = Hobbys
+    = Hobbies
 
-    - Writing things in Typst
+    - Writing documents in Typst
   ]
 )
 
