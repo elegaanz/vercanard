@@ -13,7 +13,7 @@
     - +33 6 66 66 66 66
     - 10 Downing Street, London
 
-    = Langages
+    = Languages
 
     - French : native
     - English : C1
