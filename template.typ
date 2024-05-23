@@ -1,6 +1,6 @@
 #let entry(title, body, details) = [
     #heading(level: 2, title)
-    #body
+    #block(inset: (right: 2em), body)
 
     #text(fill: gray, details)
 ]
