@@ -12,7 +12,7 @@ You can see the result in [the corresponding PDF](demo.pdf).
 First of all, copy the template to your Typst project, and import it.
 
 ```typst
-#import "@preview/vercanard:1.0.0": *
+#import "@preview/vercanard:1.0.2": *
 ```
 
 Then, call the `resume` in a global `show` rule function to use it.

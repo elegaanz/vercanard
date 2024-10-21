@@ -1,6 +1,6 @@
 [package]
 name = "vercanard"
-version = "1.0.1"
+version = "1.0.2"
 entrypoint = "template.typ"
 authors = ["Ana Gelez <https://ana.gelez.xyz>"]
 license = "GPL-3.0"
