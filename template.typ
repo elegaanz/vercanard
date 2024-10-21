@@ -2,7 +2,7 @@
     #heading(level: 2, title)
     #block(inset: (right: 2em), body)
 
-    #text(fill: gray, details)
+    #block(above: 0.7em, text(fill: gray, details))
 ]
 
 #let resume(name: "", title: "", accent-color: rgb("db9df8"), margin: 100pt, aside: [], body) = {
@@ -31,9 +31,9 @@
     columns: (2fr, 1fr),
     block(outset: 0pt, inset: (top: 0.4 * margin, right: 0pt, rest: margin), stroke: none, width: 100%, {
         set block(above: 10pt)
-        show heading.where(level: 1): it => style(s => {
+        show heading.where(level: 1): it => context {
           let h = text(size: 18pt, upper(it))
-          let dim = measure(h, s)
+          let dim = measure(h)
           stack(
             dir: ltr,
             h,
@@ -44,7 +44,7 @@
               line(stroke: accent-color, length: 100% - dim.width - 10pt)
             ),
           )
-        })
+        }
         body
     }),
     {
@@ -53,8 +53,9 @@
       show heading: it => align(right, upper(it))
       set list(marker: "")
       show list: it => {
-        set par(justify: false)
-        align(right, block(it))
+        set par(justify: false, linebreaks: "optimized")
+        set text(size: 11pt)
+        align(right, it)
       }
       aside
     }
